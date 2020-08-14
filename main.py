@@ -16,6 +16,12 @@ def calculator_factorial(a):
     return calculator_factorial(a - 1) * a
 
 
+def calculator_abs(a):
+    if a <= 0:
+        return a * -1
+    return a
+
+
 operator = input("Enter the operator you need: ")
 
 if operator == "+" or operator == "-":
@@ -49,4 +55,9 @@ if operator == "^":
 if operator == "!":
     number_one = float(input())
     result = calculator_factorial(number_one)
+    print("result of", operator, "is:", result)
+
+if operator == "||":
+    number_one = float(input())
+    result = calculator_abs(number_one)
     print("result of", operator, "is:", result)
