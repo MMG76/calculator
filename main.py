@@ -12,7 +12,7 @@ def calculator_power(a, b):
 
 operator = input("Enter the operator you need: ")
 
-if operator == "sum" or operator == "minus":
+if operator == "+" or operator == "-":
     number_one = float(input())
     number_two = float(input())
     if operator == "minus":
@@ -20,7 +20,7 @@ if operator == "sum" or operator == "minus":
     result = calculator_sum(number_one, number_two)
     print("result of", operator, "is:", result)
 
-if operator == "multiply":
+if operator == "*":
     temp = 0
     number_one = float(input())
     number_two = float(input())
@@ -34,7 +34,7 @@ if operator == "multiply":
         result = calculator_multiply(number_one, number_two)
         print("result of", operator, "is:", result)
 
-if operator == "power":
+if operator == "^":
     number_one = float(input())
     number_two = float(input())
     result = calculator_power(number_one, number_two)
