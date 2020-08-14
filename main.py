@@ -10,6 +10,12 @@ def calculator_power(a, b):
     return a ** b
 
 
+def calculator_factorial(a):
+    if a <= 0:
+        return 1
+    return calculator_factorial(a - 1) * a
+
+
 operator = input("Enter the operator you need: ")
 
 if operator == "+" or operator == "-":
@@ -38,4 +44,9 @@ if operator == "^":
     number_one = float(input())
     number_two = float(input())
     result = calculator_power(number_one, number_two)
+    print("result of", operator, "is:", result)
+
+if operator == "!":
+    number_one = float(input())
+    result = calculator_factorial(number_one)
     print("result of", operator, "is:", result)
