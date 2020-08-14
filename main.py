@@ -16,6 +16,10 @@ def calculator_factorial(a):
     return calculator_factorial(a - 1) * a
 
 
+def calculator_mod(a, b):
+    return a % b
+
+
 def calculator_abs(a):
     if a <= 0:
         return a * -1
@@ -61,3 +65,12 @@ if operator == "||":
     number_one = float(input())
     result = calculator_abs(number_one)
     print("result of", operator, "is:", result)
+
+if operator == "%":
+    number_one = float(input())
+    number_two = float(input())
+    if number_two == 0:
+        print("result of", operator, "is:", "Bad input")
+    else:
+        result = calculator_mod(number_one, number_two)
+        print("result of", operator, "is:", result)
