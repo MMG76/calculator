@@ -20,7 +20,7 @@ if operator == "sum" or operator == "minus":
     result = calculator_sum(number_one, number_two)
     print("result of", operator, "is:", result)
 
-if operator == "multiply":
+if operator == "multiply" or operator == "divide":
     temp = 0
     number_one = float(input())
     number_two = float(input())
