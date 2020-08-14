@@ -14,6 +14,10 @@ def calculator_divide(a, b):
     return a / b
 
 
+def calculator_power(a, b):
+    return a ** b
+
+
 operator = input("Enter the operator you need: ")
 
 if operator == "sum":
@@ -43,4 +47,9 @@ if operator == "divide":
     else:
         print("result of", operator, "is:", "Bad input")
 
+if operator == "power":
+    number_one = float(input())
+    number_two = float(input())
+    result = calculator_power(number_one, number_two)
+    print("result of", operator, "is:", result)
 
